@@ -1,0 +1,376 @@
+/* ...........Google Fonts....... */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ...........Custom Css....... */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --color-black1: #151515;
+    --color-black2: #000000;
+    --color-white: white;
+    --shadow-color: #c0c0c0;
+    
+    --box-shadow: 0 0 10px var(var(--shadow-color));
+
+    --transition: .4s ease;
+}
+body{
+    font-family: "Poppins", sans-serif;
+ 
+    color: var(--color-black2);
+}
+h1,h2,h3,h4,h5{
+    color: var(--color-black1);
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 55px;
+}
+h3{
+    font-size: 32px;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 20px;
+}
+p{
+    font-size: 19px;
+}
+a{
+    font-size: 19px;
+    color: var(--color-black1);
+}
+.btn{
+    display: inline-block;
+    width: fit-content;
+    padding: 10px 40px;
+    background: var(--color-black1);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: var(--transition);   
+}
+.btn:hover{
+    opacity: .8;
+}
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+section{
+    padding-top: 120px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* ..............Start Nav Bar.............. */
+nav{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+    background: var(--color-white);
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    max-width: 52px;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+.navlinks li a{
+   border-bottom: 3px solid transparent;
+   padding-bottom: 2px;
+   transition: var(--transition);
+}
+.navlinks li a:hover{
+    border-color: var(--color-black2);
+    color: var(--color-black2);
+}
+/* ..............End Nav Bar.............. */
+
+
+/* ..............Start header Bar.............. */
+header{
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+.header-container{
+    display: grid;
+    grid-template-columns: 52% auto;
+    gap: 80px;
+    align-items: center;   
+}
+.header-container p{  
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+/* ..............End header Bar.............. */
+
+
+/* ..............Start About Section.............. */
+#About{
+    padding-top: 0 !important;
+}
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 140px;
+    align-items: center;
+}
+.about-right p{
+    margin-bottom: 1rem;
+}
+.about-right h2{
+    margin-bottom: 10px;
+}
+/* ..............End About Section.............. */
+
+
+/* ..............Start Services  Section.............. */
+.myservices{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.myservices article{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 0 10px var(--shadow-color);
+    padding: 40px 20px;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+.myservices article:hover{
+    box-shadow: none;
+}
+.myservices article img{
+    max-width: 90px;
+    margin: auto;
+}
+/* ..............End Services Section.............. */
+
+
+/* ..............Start Skills Section.............. */
+.myskills{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.myskills article{
+    box-shadow: 0 0 10px var(--shadow-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    transition: var(--transition);
+}
+.myskills article:hover{
+    box-shadow: none;
+}
+.myskills article img{
+    max-width: 180px;    
+}
+/* ..............End Skills Section.............. */
+
+
+/* ..............Start Works Section.............. */
+.myworks{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px; 
+    margin-top: 90px;   
+}
+.myworks img{
+    height: 20rem;
+    border: 1px solid var(--color-black1);
+    margin-bottom: 20px;
+}
+/* ..............End Works Section.............. */
+
+
+/* ..............Start Contact Section.............. */
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.contact-container .social{
+    display: flex;
+    gap: 20px;
+}
+.contact-container .social a{
+    font-size: 20px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.contact-container .social a:hover{
+    opacity: 0.8;
+}
+/* ..............End Contact Section.............. */
+
+
+/* ..............Start Footer Section.............. */
+footer{
+    padding: 4rem 0;
+    text-align: center;
+}
+.menu{
+    display: none;
+}
+/* ..............End Footer Section.............. */
+
+
+/* ..............Start MediaScreen.............. */
+@media (max-width:991px) {
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 28px;
+    }
+    h4{
+        font-size: 24px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    /* .....Start Menu..... */
+    .menu{
+        display: flex;
+        background: #00000017;
+        backdrop-filter: blur(15px);
+        position: fixed;
+        bottom: 2rem;
+        left: 50%;      
+        transform: translate(-50%); 
+        padding: .8rem 1.8rem;
+        border-radius: 20px;
+        width: fit-content;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }    
+    .menu a{
+        font-size: 20px;
+        background: var(--shadow-color);
+        border-radius: 50%;
+        display: flex;
+        padding: .8rem;
+        transition: var(--transition);
+    }
+    .menu a:hover{
+        background: var(--color-black1);
+        color: var(--color-white);
+    }
+    /* .....Start Nav..... */ 
+    .navlinks{
+        display: none;
+    }
+    .logo{
+        margin: auto;
+    }    
+    /* .....Start header..... */
+    header{
+        height: auto;
+        padding-top: 200px;
+    } 
+     /* .....Start About..... */  
+     #About{
+        padding-top: 120px !important;
+     }
+     .about-container{
+        gap: 100px;
+     }
+      /* .....Start Services..... */ 
+      .myservices{
+        grid-template-columns: 1fr 1fr;
+      }
+}
+
+@media (max-width:700px) {
+    h1{
+        font-size: 46px;
+    }
+    h2{
+        font-size: 38px;
+    }
+    p{
+        font-size: 18px;
+    }
+    body{
+        font-size: 18px;
+    }   
+
+    /*....... nav.... */
+    nav{
+        height: 4.4rem;
+        background: #00000017;
+        backdrop-filter: blur(15px);
+    }
+    /*....... Header.... */
+    header{
+        padding-top: 140px;
+    }
+    .header-container{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .header-right{
+        grid-row: 1;
+        width: 80%;
+        margin: auto;
+    }
+    .header-left{
+        text-align: center;
+    }
+    /*.......About.... */
+    .about-container{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .about-left{
+        width: 70%;
+        margin: auto;
+    }
+      /*.......Services, skills,works.... */
+      .myservices, .myskills, .myworks{
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+      }
+}
+/* ..............End MediaScreen.............. */
